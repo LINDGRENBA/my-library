@@ -40,15 +40,21 @@ Do you love reading, but have so many books that you forget what's on your shelv
 * Input: No input
 * Output: brittsLibrary = {books = [], currentId = 0}
 
+#### Behavior: Program will automatically create a new library when page is loaded
+* Input: no input
+* Output: //in user interface logic, within .ready function, but before .submit function - let libraryName = new NewLibrary();
+
 #### Behavior: Program will take in the title of a new book from index.html form
 * Input: Extremely Loud & Incredibly Close
 * Output: Extremely Loud & Incredibly Close
 
 #### Behavior: Program will create a book object using a constructor function when user submits a form
 * Input: no input, but business logic will have Book constructor function
-* Output: bookOne = {title: "If on a winter's night a traveler", author: "Italo Calvino", yearPublished: 1979, numberOfPages: 260, haveRead: true}
+* Output: bookOne = {title: "If on a winter's night a traveler", author: "Italo Calvino"}
 
-#### Behavior: Program will push each new book object into the books array within the library object
+other properties to include later: yearPublished: 1979, numberOfPages: 260, haveRead: true 
+
+#### Behavior: Program will push each new book object into the books array within the library object  CURRENT SPEC I'M WORKING ON 
 * Input: bookOne {properties:values}, bookTwo {properties: values}
 * Output: brittsLibrary = {books = [bookOne, bookTwo]}
 
