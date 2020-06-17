@@ -26,6 +26,7 @@ function NewBook(title, author) {
 //USER INTERFACE LOGIC
 
 $(document).ready(function() {
+  let brittsLibrary = new NewLibrary();
   $("#add-book").submit(function(event) {
     event.preventDefault();
 
