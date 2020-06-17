@@ -6,3 +6,22 @@ function NewLibrary() {
   this.books = [];
   this.currentId = 0;
 }
+
+
+
+
+
+
+
+
+
+//USER INTERFACE LOGIC
+
+$(document).ready(function() {
+  $("#add-book").submit(function(event) {
+    event.preventDefault();
+
+    let bookTitleInput = $("#book-title").val();
+
+  });
+});
