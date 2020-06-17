@@ -40,6 +40,10 @@ Do you love reading, but have so many books that you forget what's on your shelv
 * Input: No input
 * Output: brittsLibrary = {books = [], currentId = 0}
 
+#### Behavior: Program will take in the title of a new book from index.html form
+* Input: Extremely Loud & Incredibly Close
+* Output: Extremely Loud & Incredibly Close
+
 #### Behavior: Program will create a book object using a constructor function when user submits a form
 * Input: no input, but business logic will have Book constructor function
 * Output: bookOne = {title: "If on a winter's night a traveler", author: "Italo Calvino", yearPublished: 1979, numberOfPages: 260, haveRead: true}
