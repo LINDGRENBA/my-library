@@ -4,7 +4,7 @@
 function NewLibrary() {
 //this.property = value
   this.books = [];
-  // this.currentId = 0;
+  this.currentCallNumber = 0;
 }
 
 //business logic to make a new book -> 
@@ -14,10 +14,19 @@ function NewBook(title, author) {
 }
 
 //business logic to push each new book object created with NewBook constructor to books array in library
-NewLibrary.prototype.addBookToLibrary = function(bookToAdd){
+NewLibrary.prototype.addBookToLibrary = function(bookToAdd){ //myBook gets passed from user interface to bookToAdd when this method is invoked
+  bookToAdd.callNumber = this.assignCallNumber();
+  //bookToAdd will get a new property put in it, the value will be number that's tossed out when we invoke the assignCallNumber method
   this.books.push(bookToAdd);
 }
 //need to call above custom method on brittsLibrary and pass argument of the book title? or book object?
+
+//assign a unique call number to any new library being created
+//call numbers are like addresses for books to help you locate them
+NewLibrary.prototype.assignCallNumber = function() {
+  this.currentCallNumber += 1; //every time we call assignCallNumber() we will +1 the CallNumber and then it tosses it back out into the void, to be caught where it is called, in the place where addBookToLibrary() is invoked
+  return this.currentCallNumber;
+}
 
 
 //USER INTERFACE LOGIC

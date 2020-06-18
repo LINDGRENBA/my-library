@@ -58,15 +58,16 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 * Input: bookOne {properties:values}, bookTwo {properties: values}
 * Output: brittsLibrary = {books = [bookOne, bookTwo]}
 
-#### Behavior: Each book object will be assigned a unique ID when created **CURRENT SPEC I'M WORKING ON**
+#### Behavior: Each book object will be assigned a unique call number when created 
 * Input: let bookOne = new Book(param, param...), let bookTwo = new Book(param, param...), ...
 * Output: brittsLibrary = {books = [bookOne{Id:1}, bookTwo{Id:2}, ...]}
+* note: instead of assigning a unique call number at time of creating new book object, assigned it at time book object is pushed to books array
 
-#### Behavior: Program will take an Id and find the book object with the matching Id
+#### Behavior: Program will take a call number and find the book object with the matching Id  **CURRENT SPEC I'M WORKING ON**
 * Input: 2
 * Output: bookTwo {properties:values}
 
-#### Behavior: 
+#### Behavior: Program will take a call number and delete it 
 * Input: 
 * Output:
 
