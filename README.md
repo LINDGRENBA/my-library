@@ -54,11 +54,11 @@ Do you love reading, but have so many books that you forget what's on your shelv
 
 other properties to include later: yearPublished: 1979, numberOfPages: 260, haveRead: true 
 
-#### Behavior: Program will push each new book object into the books array within the library object  CURRENT SPEC I'M WORKING ON 
+#### Behavior: Program will push each new book object into the books array within the library object  
 * Input: bookOne {properties:values}, bookTwo {properties: values}
 * Output: brittsLibrary = {books = [bookOne, bookTwo]}
 
-#### Behavior: Each book object will be assigned a unique ID when created
+#### Behavior: Each book object will be assigned a unique ID when created **CURRENT SPEC I'M WORKING ON**
 * Input: let bookOne = new Book(param, param...), let bookTwo = new Book(param, param...), ...
 * Output: brittsLibrary = {books = [bookOne{Id:1}, bookTwo{Id:2}, ...]}
 
