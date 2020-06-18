@@ -29,6 +29,19 @@ NewLibrary.prototype.assignCallNumber = function() {
 }
 
 
+//business logic to find call number
+NewLibrary.prototype.findMatchingCallNumber = function(callNum) {
+    for(let index = 0; index < this.books.length; index++) {
+      if (this.books[index]) {
+      if(this.books[index].callNumber == callNum) {
+        return this.books[index];
+      }
+    }
+  };
+  return false;
+}
+
+
 //USER INTERFACE LOGIC
 $(document).ready(function() {
   let brittsLibrary = new NewLibrary(); // first instance of NewLibrary constructor XXXXX

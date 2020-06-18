@@ -63,17 +63,29 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 * Output: brittsLibrary = {books = [bookOne{Id:1}, bookTwo{Id:2}, ...]}
 * note: instead of assigning a unique call number at time of creating new book object, assigned it at time book object is pushed to books array
 
-#### Behavior: Program will take a call number and find the book object with the matching Id  **CURRENT SPEC I'M WORKING ON**
+#### Behavior: Program will take a call number and find the book object with the matching call number **CURRENT SPEC I'M WORKING ON**
 * Input: 2
 * Output: bookTwo {properties:values}
 
 #### Behavior: Program will take a call number and delete it 
+* Input: 2
+* Output: newBook object at index 2 is deleted
+
+#### Behavior Program will insert the title of the book into a list at the bottom of the page
+* Input: The Sparrow (input in user form)
+* Output: The Sparrow (displayed below form)
+
+#### Behavior: Program will insert book object into div when user clicks on book object title
+* Input: User clicks If on a Winter's Night a Traveler
+* Output: Program inserts title: Italo Calvino
+
+#### Behavior: Program will find book by title if user does search by title instead of call number
+* Input: WRITE
+* Output: WRITE
+
+#### Behavior:
 * Input: 
 * Output:
-
-#### Behavior
-* Input :
-* Output :
 
 ## Known Bugs
 
