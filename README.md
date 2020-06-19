@@ -97,7 +97,8 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 
 ## User Interface, To Resolve
 #### Not Yet Resolved (on Styling Branch)
-* n/a
+* form fields do not clear after click or submission
+* update code to delete or show info when user clicks a button in addition to existing functionality
 #### Resolved
 * connected front end to back end
 

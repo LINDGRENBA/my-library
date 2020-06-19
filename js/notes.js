@@ -23,6 +23,14 @@
     b) every time you pass a new book object to be pushed to books[], call on this method and catch the number it returns -> NewLibrary.prototype.addBookToLibrary = function(bookToAdd)
     bookToAdd.callNumber = this.assignCallNumber();   this.books.push(bookToAdd);
     }
+
+  7. search for call number
+
+  8. delete a book
+
+  9. insert a book title into a display to show the user the whole library
+
+  10. display the info for a book when it's clicked 
   
 
 

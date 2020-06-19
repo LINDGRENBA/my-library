@@ -42,6 +42,7 @@ NewLibrary.prototype.findMatchingCallNumber = function(callNum) {
 }
 
 //business logic to delete book using call number
+//this works the same as findMatchingCallNumber
 NewLibrary.prototype.deleteBook = function(callNum) {
   for(let index = 0; index < this.books.length; index++) {
     if (this.books[index]) {
@@ -57,9 +58,17 @@ NewLibrary.prototype.deleteBook = function(callNum) {
 
 //USER INTERFACE LOGIC
 
-function displayBookDetails(bookToDisplay) {
-
+//this function will take in brittsLibrary and for each book it will print a <li>book title</li> inside of ul#my-books
+function displayLibrary(booksToDisplay) { //booksToDisplay is catching brittsLibrary and passing it into this function (anywhere you see books to display in this code block, it's referencing brittsLibrary which is being passed here from where we called it in the #add-book.submit function)
+  let bookList = $("ul#my-books"); //we're saying, here's our div for our list of books....
+  let toDisplayBookInfo = ""; //declare a variable to insert, but start it as empty....
+  booksToDisplay.books.forEach(function(book) { //for each book in brittsLibrary.... do the next thing, which is....
+    toDisplayBookInfo += "<li class=" + book.callNumber + ">" + book.title + "</li>"; //update the value of toDisplayBookInfo with a <li> containing the book's title.
+    //IMPORTANT: we add a class with the value of the book's call number, so that later, when we click on that book title, we can use the class (which will be the same as the book's call number) to access the specific book by its call number and display all of its info to the user.
+  });
+  bookList.html(toDisplayBookInfo);
 };
+
 
 $(document).ready(function() {
   let brittsLibrary = new NewLibrary(); // first instance of NewLibrary constructor XXXXX
@@ -72,7 +81,8 @@ $(document).ready(function() {
     brittsLibrary.addBookToLibrary(myBook); // target brittsLibrary, use addBookToLibrary function by calling it and passing the newBookObject to it
     $("#confirm-title").text(bookTitleInput);
     $("#confirm-message").show();
-    $("#my-books").append("<li>" + bookTitleInput + "</li>");
+    // $("#my-books").append("<li>" + bookTitleInput + "</li>");
+    displayLibrary(brittsLibrary);
   });
 
   $("#search-for-call").submit(function(event) {
@@ -91,6 +101,3 @@ $(document).ready(function() {
     });
   });
 });
-
-//brittsLibrary only exists within the .ready, so outside is not seeing it
-//need to pass brittsLibrary to the outside somehow??? why?
