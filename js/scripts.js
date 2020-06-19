@@ -34,7 +34,7 @@ NewLibrary.prototype.findMatchingCallNumber = function(callNum) {
     for(let index = 0; index < this.books.length; index++) {
       if (this.books[index]) {
       if(this.books[index].callNumber == callNum) {
-        return this.books[index];
+        return this.books[index].title;
       }
     }
   };
@@ -55,8 +55,15 @@ $(document).ready(function() {
     $("#confirm-title").text(bookTitleInput);
     $("#confirm-message").show();
     console.log(brittsLibrary.books);
-    brittsLibrary.findMatchingCallNumber();
   });
+
+  $("#search-for-call").submit(function(event) {
+    event.preventDefault();
+
+    let userNumber = $("#call-number").val();
+    let matchingBook = brittsLibrary.findMatchingCallNumber(userNumber);
+    // $("#search-result-here").text(matchingBook);
+  })
 });
 
 //brittsLibrary only exists within the .ready, so outside is not seeing it
