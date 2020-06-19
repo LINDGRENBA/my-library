@@ -63,11 +63,11 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 * Output: brittsLibrary = {books = [bookOne{Id:1}, bookTwo{Id:2}, ...]}
 * note: instead of assigning a unique call number at time of creating new book object, assigned it at time book object is pushed to books array
 
-#### Behavior: Program will take a call number and find the book object with the matching call number **CURRENT SPEC I'M WORKING ON**
+#### Behavior: Program will take a call number and find the book object with the matching call number 
 * Input: 2
 * Output: bookTwo {properties:values}
 
-#### Behavior: Program will take a call number and delete it 
+#### Behavior: Program will take a call number and delete it **CURRENT SPEC I'M WORKING ON**
 * Input: 2
 * Output: newBook object at index 2 is deleted
 

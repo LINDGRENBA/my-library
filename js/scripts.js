@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     let userNumber = $("#call-number").val();
     let matchingBook = brittsLibrary.findMatchingCallNumber(userNumber);
-    // $("#search-result-here").text(matchingBook);
+    $("#search-result-here").text(matchingBook);
   })
 });
 

@@ -1,21 +1,41 @@
-#confirm-message {
-  display: none;
-  margin: 20px auto;
-}
-
-#call-number {
-  width: 100px;
+body {
+  box-sizing: border-box;
 }
 
 .instruction {
   font-style: italic;
 }
 
+/*  BUTTONS  */
+#show-details, #delete-book {
+  margin: 6px 15px;
+}
+
+/* FORMS AND OUTPUT */
+
+#show-books {
+  min-height: 
+  200px;
+}
+
+#book-title {
+  width: 95%;
+}
+
 #search-result-here {
   border: 1px solid #ccc;
   border-radius: 4px;
   height: 34px;
-  width: 500px;
+  width: 90%;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   padding: 6px 12px;
+}
+
+#call-number {
+  width: 100px;
+}
+
+#confirm-message {
+  display: none;
+  margin: 20px auto;
 }
