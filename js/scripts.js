@@ -55,6 +55,7 @@ $(document).ready(function() {
     $("#confirm-title").text(bookTitleInput);
     $("#confirm-message").show();
     console.log(brittsLibrary.books);
+    brittsLibrary.findMatchingCallNumber();
   });
 });
 
