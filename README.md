@@ -72,11 +72,10 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 * Output: newBook object at index 2 is deleted
 
 #### Behavior Program will insert the title of the book into a list at the bottom of the page
-**CURRENT SPEC I'M WORKING ON**
 * Input: The Sparrow (input in user form)
 * Output: The Sparrow (displayed below form)
 
-#### Behavior: Program will insert book object into div when user clicks on book object title
+#### Behavior: Program will insert book object details into div when user clicks on book object title **CURRENT SPEC I'M WORKING ON**
 * Input: User clicks If on a Winter's Night a Traveler
 * Output: Program inserts title: Italo Calvino
 

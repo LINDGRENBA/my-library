@@ -57,7 +57,9 @@ NewLibrary.prototype.deleteBook = function(callNum) {
 
 //USER INTERFACE LOGIC
 
+function displayBookDetails(bookToDisplay) {
 
+};
 
 $(document).ready(function() {
   let brittsLibrary = new NewLibrary(); // first instance of NewLibrary constructor XXXXX
