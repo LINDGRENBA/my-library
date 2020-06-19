@@ -56,6 +56,9 @@ NewLibrary.prototype.deleteBook = function(callNum) {
 
 
 //USER INTERFACE LOGIC
+
+
+
 $(document).ready(function() {
   let brittsLibrary = new NewLibrary(); // first instance of NewLibrary constructor XXXXX
   $("#add-book").submit(function(event) {
@@ -67,7 +70,7 @@ $(document).ready(function() {
     brittsLibrary.addBookToLibrary(myBook); // target brittsLibrary, use addBookToLibrary function by calling it and passing the newBookObject to it
     $("#confirm-title").text(bookTitleInput);
     $("#confirm-message").show();
-    console.log(brittsLibrary.books);
+    $("#my-books").append("<li>" + bookTitleInput + "</li>");
   });
 
   $("#search-for-call").submit(function(event) {
