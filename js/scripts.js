@@ -41,6 +41,19 @@ NewLibrary.prototype.findMatchingCallNumber = function(callNum) {
   return false;
 }
 
+//business logic to delete book using call number
+NewLibrary.prototype.deleteBook = function(callNum) {
+  for(let index = 0; index < this.books.length; index++) {
+    if (this.books[index]) {
+      if (this.books[index].callNumber == callNum) {
+        delete this.books[index];
+        return true;
+      }
+    }
+  };
+  return false;
+}
+
 
 //USER INTERFACE LOGIC
 $(document).ready(function() {
@@ -63,7 +76,15 @@ $(document).ready(function() {
     let userNumber = $("#call-number").val();
     let matchingBook = brittsLibrary.findMatchingCallNumber(userNumber);
     $("#search-result-here").text(matchingBook);
-  })
+
+
+    $("#delete-book").click(function() {
+      let reallyDelete = confirm("Do you really want to delete this book?");
+      if(reallyDelete) {
+        brittsLibrary.deleteBook(userNumber);
+      }
+    });
+  });
 });
 
 //brittsLibrary only exists within the .ready, so outside is not seeing it

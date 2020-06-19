@@ -72,6 +72,7 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 * Output: newBook object at index 2 is deleted
 
 #### Behavior Program will insert the title of the book into a list at the bottom of the page
+**CURRENT SPEC I'M WORKING ON**
 * Input: The Sparrow (input in user form)
 * Output: The Sparrow (displayed below form)
 
@@ -90,7 +91,7 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 ## Known Bugs
 
 #### Not Yet Resolved
-* There are no known bugs at this time.
+* When user deletes a book, confirm message shows twice
 #### Resolved
 * 
 
