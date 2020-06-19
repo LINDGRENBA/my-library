@@ -97,9 +97,9 @@ other properties to include later: yearPublished: 1979, numberOfPages: 260, have
 
 ## User Interface, To Resolve
 #### Not Yet Resolved (on Styling Branch)
-* The front end is not yet connected to the UI and business logic
+* n/a
 #### Resolved
-* 
+* connected front end to back end
 
 ## Support and contact details
 
